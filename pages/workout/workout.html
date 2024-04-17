@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App - Workout Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Add your line graph library here -->
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <div class="flex justify-between items-center mb-4">
+            <button onclick="goBack()" class="text-blue-500">
+                <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <h1 class="text-2xl font-bold">Workout Tracker</h1>
+            <button onclick="goToProfile()" class="text-blue-500">
+                Profile <i class="fas fa-user"></i>
+            </button>
+        </div>
+        <!-- Add your line graph here -->
+        <div class="mb-4">
+            <!-- Line graph of calories vs time -->
+        </div>
+        <h2 class="text-lg font-semibold mb-2">All Workouts</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <!-- List of workouts according to selected goal -->
+            <div class="border rounded-md p-4 bg-white">Full Body Workout</div>
+            <div class="border rounded-md p-4 bg-white">Upper Body Workout</div>
+            <div class="border rounded-md p-4 bg-white">Lower Body Workout</div>
+            <div class="border rounded-md p-4 bg-white">Cardiovascular Health</div>
+            <div class="border rounded-md p-4 bg-white">Muscle Gain</div>
+            <div class="border rounded-md p-4 bg-white">Weight Loss</div>
+        </div>
+    </div>
+    <footer class="fixed bottom-0 left-0 right-0 flex justify-between items-center bg-white p-4">
+        <!-- Add your icons for different purposes -->
+        <div>
+            <a href="#" class="text-blue-500"><i class="fas fa-home"></i></a>
+            <a href="#" class="text-blue-500"><i class="fas fa-search"></i></a>
+            <a href="#" class="text-blue-500"><i class="fas fa-heart"></i></a>
+            <a href="#" class="text-blue-500"><i class="fas fa-bell"></i></a>
+            <a href="#" class="text-blue-500"><i class="fas fa-user"></i></a>
+        </div>
+    </footer>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goToProfile() {
+            // Redirect to profile page
+        }
+    </script>
+</body>
+
+</html>
